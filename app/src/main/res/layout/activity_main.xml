@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="61dp"
+        android:onClick="calcular"
+        android:text="calcular"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freq" />
+
+    <TextView
+        android:id="@+id/tnota2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Nota 2"
+        android:textColor="#3C3C3C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/nota2"
+        app:layout_constraintEnd_toEndOf="@+id/nota2"
+        app:layout_constraintStart_toStartOf="@+id/nota2"
+        app:layout_constraintTop_toBottomOf="@+id/nota1" />
+
+    <TextView
+        android:id="@+id/tfreq"
+        android:layout_width="184dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="1dp"
+        android:text="Frequência"
+        android:textColor="#3C3C3C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/freq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/aluno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="34dp"
+        android:hint="Digite o nome do aluno"
+        app:layout_constraintBottom_toTopOf="@+id/tnota1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taluno" />
+
+    <TextView
+        android:id="@+id/tnota1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Nota 1"
+        android:textColor="#3C3C3C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/nota1"
+        app:layout_constraintEnd_toEndOf="@+id/nota1"
+        app:layout_constraintStart_toStartOf="@+id/nota1"
+        app:layout_constraintTop_toBottomOf="@+id/aluno" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nota2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:hint="Nota (0 - 10)"
+        app:layout_constraintBottom_toTopOf="@+id/tfreq"
+        app:layout_constraintEnd_toEndOf="@+id/freq"
+        app:layout_constraintStart_toStartOf="@+id/tfreq"
+        app:layout_constraintTop_toBottomOf="@+id/tnota2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/freq"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:hint="(0 - 100)"
+        app:layout_constraintBottom_toTopOf="@+id/calcular"
+        app:layout_constraintEnd_toEndOf="@+id/nota1"
+        app:layout_constraintStart_toStartOf="@+id/tfreq"
+        app:layout_constraintTop_toBottomOf="@+id/tfreq" />
+
+    <TextView
+        android:id="@+id/taluno"
+        android:layout_width="93dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="57dp"
+        android:text="Aluno"
+        android:textColor="#3C3C3C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/aluno"
+        app:layout_constraintStart_toStartOf="@+id/aluno"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nota1"
+        android:layout_width="117dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:hint="Nota (0 - 10)"
+        app:layout_constraintBottom_toTopOf="@+id/tnota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tnota1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
